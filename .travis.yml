@@ -4,15 +4,8 @@ services:
   - redis-server
 
 rvm:
-  - 1.9.3
-  - 2.1.1
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx
+  - 2.2.2
 
 script: bundle exec rspec -b spec
-
-matrix:
-  allow_failures:
-    - rvm: rbx
 
 
